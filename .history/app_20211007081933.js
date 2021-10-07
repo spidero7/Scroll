@@ -1,4 +1,4 @@
-// Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport
+// Element.getBoundingClientRect() method returns the size of an element and its position relat
 
 // set date
 const date = document.getElementById('date');
@@ -11,12 +11,5 @@ const links = document.querySelector('.links');
 
 navToggleButton.addEventListener('click', function() {
     // linksContainer.classList.toggle('show-links');
-    const containerHeight = linksContainer.getBoundingClientRect().height;
-    const linksHeight = links.getBoundingClientRect().height;
 
-    if (containerHeight === 0) {
-        linksContainer.style.height = `${linksHeight}px`;
-    } else {
-        linksContainer.style.height = 0;
-    }
 });
