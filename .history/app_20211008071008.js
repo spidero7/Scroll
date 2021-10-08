@@ -52,7 +52,6 @@ scrollLinks.forEach(link => {
         // prevent default
         e.preventDefault();
         // navigate to specific spot
-        const id = e.currentTarget.getAttribute('href');
-        console.log(id);
+        const id = e.currentTarget.getAttribute('href')
     })
 });

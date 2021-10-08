@@ -49,10 +49,6 @@ const scrollLinks = document.querySelectorAll('.scroll-link');
 
 scrollLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-        // prevent default
         e.preventDefault();
-        // navigate to specific spot
-        const id = e.currentTarget.getAttribute('href');
-        console.log(id);
     })
-});
+})
