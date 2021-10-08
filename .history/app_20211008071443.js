@@ -54,8 +54,6 @@ scrollLinks.forEach(link => {
         e.preventDefault();
         // navigate to specific spot
         const id = e.currentTarget.getAttribute('href').slice(1); // skiped the "#"
-        //console.log(id);
-        const element = document.getElementById(id);
-        console.log(element);
+        console.log(id);
     })
 });

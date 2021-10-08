@@ -1,5 +1,5 @@
 // Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport
-// Silce extracts a section of a string without modifying orginal string
+// Silce extracts a section of a string without
 
 // set date
 const date = document.getElementById('date');
@@ -53,9 +53,7 @@ scrollLinks.forEach(link => {
         // prevent default
         e.preventDefault();
         // navigate to specific spot
-        const id = e.currentTarget.getAttribute('href').slice(1); // skiped the "#"
+        const id = e.currentTarget.getAttribute('href');
         //console.log(id);
-        const element = document.getElementById(id);
-        console.log(element);
     })
 });
