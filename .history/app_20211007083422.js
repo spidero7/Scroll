@@ -1,4 +1,5 @@
-// Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport
+// Element.getBoundingClientRect() method returns the size 
+of an element and its position relative to the viewport
 
 // set date
 const date = document.getElementById('date');
@@ -18,20 +19,5 @@ navToggleButton.addEventListener('click', function() {
         linksContainer.style.height = `${linksHeight}px`;
     } else {
         linksContainer.style.height = 0;
-    }
-});
-
-const navbar = document.getElementById('nav');
-const topLink = document.querySelector('.top-link');
-// fixed navbar
-window.addEventListener('scroll', function () {
-    //console.log(window.pageYOffset); // show how pixels we scroll
-    const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-
-    if (scrollHeight > navHeight) {
-        navbar.classList.add('fixed-nav');
-    } else {
-        navbar.classList.remove('fixed-nav');
     }
 });

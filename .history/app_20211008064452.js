@@ -30,8 +30,6 @@ window.addEventListener('scroll', function () {
     const navHeight = navbar.getBoundingClientRect().height;
 
     if (scrollHeight > navHeight) {
-        navbar.classList.add('fixed-nav');
-    } else {
-        navbar.classList.remove('fixed-nav');
+        navbar.classList.add('fi')
     }
 });

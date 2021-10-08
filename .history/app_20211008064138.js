@@ -25,13 +25,5 @@ const navbar = document.getElementById('nav');
 const topLink = document.querySelector('.top-link');
 // fixed navbar
 window.addEventListener('scroll', function () {
-    //console.log(window.pageYOffset); // show how pixels we scroll
-    const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-
-    if (scrollHeight > navHeight) {
-        navbar.classList.add('fixed-nav');
-    } else {
-        navbar.classList.remove('fixed-nav');
-    }
+    console.log(window.pageYOffset); // show how pixels we scroll
 });

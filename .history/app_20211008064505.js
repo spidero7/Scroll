@@ -32,6 +32,6 @@ window.addEventListener('scroll', function () {
     if (scrollHeight > navHeight) {
         navbar.classList.add('fixed-nav');
     } else {
-        navbar.classList.remove('fixed-nav');
+        
     }
 });

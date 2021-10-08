@@ -27,11 +27,5 @@ const topLink = document.querySelector('.top-link');
 window.addEventListener('scroll', function () {
     //console.log(window.pageYOffset); // show how pixels we scroll
     const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-
-    if (scrollHeight > navHeight) {
-        navbar.classList.add('fixed-nav');
-    } else {
-        navbar.classList.remove('fixed-nav');
-    }
+    const navHeight = navbar.getBoundingClientRect().height
 });
