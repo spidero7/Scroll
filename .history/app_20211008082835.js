@@ -71,7 +71,7 @@ scrollLinks.forEach(link => {
         }
 
         if (navHeight > 82) {
-            position = position + containerHeight; // subtract because when we open navbar we have a space
+            position = position + containerHeight; // subtract because when we open navbar 
         }
         //console.log(position); // position of section in pixels
         window.scrollTo({
