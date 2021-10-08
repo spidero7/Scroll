@@ -69,10 +69,7 @@ scrollLinks.forEach(link => {
         if (!fixedNav) {
             position =  position - navHeight;
         }
-
-        if (navHeight > 82) {
-            position = position + containerHeight;
-        }
+        
         //console.log(position); // position of section in pixels
         window.scrollTo({
             left: 0,

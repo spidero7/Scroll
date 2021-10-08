@@ -58,21 +58,7 @@ scrollLinks.forEach(link => {
         //console.log(id);
         const element = document.getElementById(id);
         //console.log(element);
-
-        // calculate the heights
-        const navHeight = navbar.getBoundingClientRect().height;
-        const containerHeight = linksContainer.getBoundingClientRect().height
-        const fixedNav = navbar.classList.contains('fixed-nav');
-
-        let position = element.offsetTop - navHeight;
-        
-        if (!fixedNav) {
-            position =  position - navHeight;
-        }
-
-        if (navHeight > 82) {
-            position = position + containerHeight;
-        }
+        let position = element.offsetTop;
         //console.log(position); // position of section in pixels
         window.scrollTo({
             left: 0,
