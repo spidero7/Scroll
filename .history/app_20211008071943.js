@@ -1,6 +1,6 @@
 // Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport
 // Silce extracts a section of a string without modifying orginal string
-// offsetTop - a number, representing the top position of the element, in pixel
+//offsetTop
 
 // set date
 const date = document.getElementById('date');
@@ -58,12 +58,6 @@ scrollLinks.forEach(link => {
         //console.log(id);
         const element = document.getElementById(id);
         //console.log(element);
-        let position = element.offsetTop;
-        //console.log(position); // position of section in pixels
-        window.scrollTo({
-            left: 0,
-            top: position
-        });
-        linksContainer.style.height = 0;
-    });
+
+    })
 });

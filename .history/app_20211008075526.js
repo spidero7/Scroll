@@ -61,9 +61,7 @@ scrollLinks.forEach(link => {
         let position = element.offsetTop;
         //console.log(position); // position of section in pixels
         window.scrollTo({
-            left: 0,
-            top: position
+            
         });
-        linksContainer.style.height = 0;
     });
 });
